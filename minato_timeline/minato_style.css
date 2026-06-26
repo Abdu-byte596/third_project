@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #060913; 
+    font-family: sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 60px 10%;
+    min-height: 400px;
+}
+
+#kid-minato {
+    background: linear-gradient(to bottom, #060913, #0b1528); 
+}
+
+#academy {
+    background: linear-gradient(to bottom, #0b1528, #40101d); 
+    flex-direction: row-reverse; /* Flips image to the right */
+}
+
+#jonin-days {
+    background: linear-gradient(to bottom, #40101d, #112921); 
+}
+
+#yellow-flash {
+    background: linear-gradient(to bottom, #112921, #4c3c10); 
+    flex-direction: row-reverse;
+}
+
+#sacrifice {
+    background: linear-gradient(to bottom, #4c3c10, #181922);
+}
+
+.text {
+    max-width: 500px;
+    color: #ffffff;
+}
+
+.text p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 15px; 
+}
+
+
+.highlight {
+    color: #4df3ff; 
+    font-weight: bold;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+img:hover {
+    transform: scale(1.04); 
+    box-shadow: 0 10px 25px rgba(77, 243, 255, 0.25); 
+}
+
+@media (max-width: 786px) {
+    section {
+        flex-direction: column;
+    }
+    #academy {
+        flex-direction: column;
+    }
+    #yellow-flash {
+        flex-direction: column;
+    }
+    img {
+        order: -1; 
+    }
+}

@@ -1,0 +1,85 @@
+body
+{
+    background: radial-gradient(circle at center, #0f2b48 0%, #07090e 70%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#c
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 900px;
+   
+
+}
+.card-img-top {
+    height: 160px;
+    object-fit: cover;
+    object-position: top; 
+}
+.card
+{
+ background: rgba(255, 255,255, 0.1);
+ color: white;
+ backdrop-filter: blur(10px);
+}
+/* a
+{
+    margin-left: 25%;
+} */
+.card p
+{
+    color: rgba(255, 255,255, 0.7);
+}
+/* #eren
+{
+    height: 160px;
+    object-fit: fill;
+     
+} */
+ .naruto-card:hover
+ {
+    box-shadow: 0 0 25px 5px rgba(255, 102, 0, 0.6);
+ }
+
+.project-card:hover {
+    box-shadow: 0 0 25px 5px rgba(0, 212, 255, 0.6);
+}
+.minato-card:hover
+{
+    box-shadow:0 0 25px 5px rgba(255, 223, 0, 0.6);
+}
+.eren-card:hover
+{
+    box-shadow:0 0 25px 5px rgba(46, 139, 87, 0.6) ;
+}
+.light-card:hover
+{
+    box-shadow:0 0 25px 5px rgba(178, 34, 34, 0.6);
+}
+.mikey-card:hover
+{
+   box-shadow: 0 0 25px 5px rgba(212, 175, 55, 0.6);
+}
+
+@media (max-width: 786px) {
+
+    #c{ display: flex;
+        flex-direction: column ;
+        align-items: center;
+        gap: 20px; 
+    }
+
+    
+    .card{
+        width: 85% ; 
+        max-width: 350px;
+    }
+}

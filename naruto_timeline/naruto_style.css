@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0f19; 
+    font-family: sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 60px 10%;
+    min-height: 400px;
+}
+#Childhood {
+    background: linear-gradient(to bottom, #0f172a, #334155);
+}
+
+#genin {
+    background: linear-gradient(to bottom, #334155, #1e3a8a);
+    flex-direction: row-reverse;
+}
+
+#shippudden {
+    background: linear-gradient(to bottom, #1e3a8a, #991b1b);
+}
+
+#hokage {
+    background: linear-gradient(to bottom, #991b1b, #c2410c);
+    flex-direction: row-reverse;
+}
+
+.text {
+    max-width: 500px;
+    color: #ffffff;
+}
+
+.text p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 15px; 
+}
+
+.highlight {
+    color: #fbd38d; 
+    font-weight: bold;
+}
+img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+img:hover {
+    transform: scale(1.04); 
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15); 
+    cursor: pointer;
+}
+@media  (max-width:786px) {
+    section{
+        flex-direction: column;
+    }
+      #hokage
+    {
+        flex-direction: column;
+    }
+    #genin
+    {
+        flex-direction: column;
+    }
+    
+    img{
+        order: -1;
+    }
+  
+}

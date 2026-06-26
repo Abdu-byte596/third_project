@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d11; 
+    font-family: sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 60px 10%;
+    min-height: 400px;
+}
+
+
+#kid {
+    background: linear-gradient(to bottom, #111827, #2d1b10); 
+}
+
+#scout {
+    background: linear-gradient(to bottom, #2d1b10, #142217);   
+      flex-direction: row-reverse; 
+}
+
+#marley {
+    background: linear-gradient(to bottom, #142217, #241616); 
+}
+#the-rumbling {
+    background: linear-gradient(to bottom, #241616, #0f0505);
+    flex-direction: row-reverse; 
+}
+.text {
+    max-width: 500px;
+    color: #ffffff;
+}
+
+.text p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 15px; 
+}
+
+.highlight {
+    color: #ff4d4d; 
+    font-weight: bold;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+img:hover {
+    transform: scale(1.04); 
+    box-shadow: 0 10px 25px rgba(239, 68, 68, 0.2);
+    cursor: pointer;
+}
+
+@media (max-width: 786px) {
+    section {
+        flex-direction: column;
+    }
+    #scout {
+        flex-direction: column;
+    }
+    #the-rumbling {
+        flex-direction: column;
+    }
+    img {
+        order: -1;
+    }
+}
